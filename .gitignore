@@ -35,4 +35,4 @@ node_modules
 
 www/bundle.js
 www/*.svg
-.swp
+*.swp
