@@ -1,7 +1,5 @@
 test/
 www/
 demo/
-webpack.config.js
-webpack.build.config.js
 .gitignore
 .babelrc
