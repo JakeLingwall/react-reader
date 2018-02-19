@@ -8,7 +8,6 @@
     "prepublish": "npm run compile",
     "start": "webpack-dev-server --port 3001 --host 0.0.0.0 --progress --colors --config ./webpack.config.js",
     "build": "webpack --verbose --colors --display-error-details --config ./webpack.build.config.js",
-    "postinstall": "npm run compile",
     "lint": "eslint -c .eslintrc src demo; exit 0",
     "deploy": "gh-pages-deploy",
     "clean-source": "rimraf demo lib src www .babelrc .eslintrc .npmignore package.json README.md webpack.build.config.js webpack.config.js"
