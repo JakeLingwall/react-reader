@@ -64,6 +64,7 @@ class EpubView extends Component {
       this.rendition.prev()
     }
     this.nextPage = () => {
+      alert("hello world")
       this.rendition.next()
     }
     this.rendition.on('locationChanged', this.onLocationChange)
