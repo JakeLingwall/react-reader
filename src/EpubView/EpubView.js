@@ -61,10 +61,15 @@ class EpubView extends Component {
     this.rendition.display(typeof location === 'string' || typeof location === 'number' ? location : toc[0].href)
 
     this.prevPage = () => {
+      if (this.props.prevPage) {
+        this.props.prevPage()
+      }
       this.rendition.prev()
     }
     this.nextPage = () => {
-      alert("hello world")
+      if (this.props.nextPage) {
+        this.props.nextPage()
+      }
       this.rendition.next()
     }
     this.rendition.on('locationChanged', this.onLocationChange)
@@ -125,7 +130,9 @@ EpubView.propTypes = {
   tocChanged: PropTypes.func,
   styles: PropTypes.object,
   epubOptions: PropTypes.object,
-  getRendition: PropTypes.func
+  getRendition: PropTypes.func,
+  prevPage: PropTypes.func,
+  nextPage: PropTypes.func
 }
 
 export default EpubView

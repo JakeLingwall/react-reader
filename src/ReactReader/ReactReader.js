@@ -110,6 +110,8 @@ class ReactReader extends PureComponent {
                 locationChanged={locationChanged}
                 epubOptions={epubOptions}
                 getRendition={getRendition}
+                prevPage={this.props.prevPage}
+                nextPage={this.props.nextPage}
               />
               {swipeable && <div style={styles.swipeWrapper} />}
             </div>
@@ -148,7 +150,9 @@ ReactReader.propTypes = {
   styles: PropTypes.object,
   epubOptions: PropTypes.object,
   getRendition: PropTypes.func,
-  swipeable: PropTypes.bool
+  swipeable: PropTypes.bool,
+  prevPage: PropTypes.func,
+  nextPage: PropTypes.func
 }
 
 export default ReactReader

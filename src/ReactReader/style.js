@@ -48,7 +48,7 @@ export default {
     border: 'none',
     background: 'none',
     position: 'absolute',
-    top: '50%',
+    height: '100%',
     marginTop: -32,
     fontSize: 64,
     padding: '0 10px',
