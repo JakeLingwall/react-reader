@@ -1,10 +1,10 @@
-import React, {PureComponent} from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Swipeable from 'react-swipeable'
 import {EpubView} from '..'
 import defaultStyles from './style'
 
-class TocItem extends PureComponent {
+class TocItem extends Component {
   setLocation = () => {
     this.props.setLocation(this.props.href)
   }
@@ -23,7 +23,7 @@ TocItem.propTypes = {
   styles: PropTypes.object
 }
 
-class ReactReader extends PureComponent {
+class ReactReader extends Component {
   constructor (props) {
     super(props)
     this.state = {
