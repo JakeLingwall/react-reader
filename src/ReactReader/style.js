@@ -49,7 +49,6 @@ export default {
     background: 'none',
     position: 'absolute',
     height: '100%',
-    marginTop: -32,
     fontSize: 64,
     padding: '0 10px',
     color: '#E2E2E2',
