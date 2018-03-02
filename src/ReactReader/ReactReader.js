@@ -110,8 +110,6 @@ class ReactReader extends Component {
                 locationChanged={locationChanged}
                 epubOptions={epubOptions}
                 getRendition={getRendition}
-                prevPage={this.props.prevPage}
-                nextPage={this.props.nextPage}
               />
               {swipeable && <div style={styles.swipeWrapper} />}
             </div>
