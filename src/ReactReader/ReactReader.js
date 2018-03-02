@@ -38,11 +38,11 @@ class ReactReader extends Component {
   }
 
   next = () => {
-    this.refs.reader.nextPage()
+    this.props.nextPage(this.refs.reader.nextPage)
   }
 
   prev = () => {
-    this.refs.reader.prevPage()
+    this.props.prevPage(this.refs.reader.prevPage)
   }
 
   onTocChange = (toc) => {
@@ -152,7 +152,8 @@ ReactReader.propTypes = {
   getRendition: PropTypes.func,
   swipeable: PropTypes.bool,
   prevPage: PropTypes.func,
-  nextPage: PropTypes.func
+  nextPage: PropTypes.func,
+  blockOnEndOfChapter: PropTypes.func
 }
 
 export default ReactReader
